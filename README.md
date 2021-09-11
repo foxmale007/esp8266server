@@ -5,7 +5,7 @@ a esp8266 http web server with micropython v1.16
 文件下传支持gzip模式，只需要用gzip将文件压缩成.gz格式
 
 典型调用：
-
+```python
 import network
 ap_if = network.WLAN(network.AP_IF)
 ap_if.config(essid='AP8266', password='abcd1234')
@@ -36,4 +36,9 @@ def up():
 
 print('start server')
 app.run()
+```
+
+下一步连接热点 AP8266，密码abcd1234。打开 http://192.168.4.1 看到控制面板，点击各方向箭头进行命名传输，可以看到串口打印内容
+
+
 
