@@ -1,0 +1,1 @@
+python -m mpy_cross %1
