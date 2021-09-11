@@ -5,7 +5,7 @@ a esp8266 http web server with micropython v1.16
 文件下传支持gzip模式，只需要用gzip将文件压缩成.gz格式
 
 典型调用：
-
+```python
 import network
 ap_if = network.WLAN(network.AP_IF)
 ap_if.config(essid='AP8266', password='abcd1234')
@@ -36,4 +36,4 @@ def up():
 
 print('start server')
 app.run()
-
+```
